@@ -1,0 +1,156 @@
+/* ESTILOS GERAIS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.daltonico {
+    filter: grayscale(100%) contrast(120%);
+}
+
+/* CSS Cabeçalho */
+
+/*alinhamento do cabeçalho*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fefefe; /* Está com essas variaveis pois fiz um root padrão, mas só colocar a cor*/
+    border-bottom: 3px solid #a071059d;
+}
+
+header button{
+    
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin: 10px;
+        background-color: #EDD5C5;
+    
+}
+
+/*tamanho fixo do logo no cabeeçalho*/
+header img{
+    width: 50px;
+    object-fit: contain;
+}
+
+
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: url(/img/wallpaper.jpg) no-repeat center;
+    background-size: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.011);
+}
+
+.titulo {
+    font-weight: 700;
+    font-size: 32px;
+    color: white;
+    text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.315);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.315);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#textog{
+    font-weight: 700;
+    font-size: 33px;
+    color:#522916 ;
+    background-color: #EDD5C5;
+    padding: 20px;
+  }
+
+  #textom{
+    font-weight: 700;
+    font-size: 28px;
+    color:#522916 ;
+    padding: 20px;
+  }
+   
+  #textop{
+   font-size: 20px;
+   margin-top: 30px;
+   text-align: justify;
+   color:#522916 ;
+   padding-right: 40px;
+   padding-left: 30px;
+   
+  }
+
+      
+  .cardpet {
+    border-top: #EDD5C5 solid;
+    box-shadow: 0 4px 10px #EDD5C5;
+    background: radial-gradient( circle, white ,#edd5c546) ;
+    
+  }
+
+
+
+.cards-mayara{
+    background: radial-gradient( circle, white ,#edd5c546) ;
+}
+
+
+
+/*Background e alinhamento de cada matéria*/
+.container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    background-color: white;
+    border: #EDD5C5 solid 1px;
+    margin: 10px;
+    overflow: hidden;
+    align-items: flex-start;
+    padding: 20px ;
+    flex-wrap: wrap;
+}
+/*alinhamento da div da imagem responsivo */
+
+/*Imagem da matéria */
+.imgConteudo img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+/*alinhamento dos textos da matéria */
+.conteudoCarita{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    padding-left: 40px;
+    
+}
+/*títulos das matérias */
+
+footer{
+    background: radial-gradient( circle, white ,#EDD5C5) ;
+    height: 50px;
+
+}
+
+footer img{
+    width: 40px;
+}
