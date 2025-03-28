@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="index.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+<!-- Plugin VLibras -->
 <div vw class="enabled">
   <div vw-access-button class="active"></div>
   <div vw-plugin-wrapper>
@@ -21,140 +22,139 @@
 </head>
 
 <body>
-    <!-- header -->
- <header>
+    <!-- Header -->
+ <header class="d-flex justify-content-between align-items-center p-3">
     <img src="/img/smiling_7298827.png" alt="Logo">
     
-    <button onclick="ativarModoDaltonico()">Modo Daltônico</button>
-   
+    <div>
+        <button onclick="ativarModoDaltonico()">Modo Daltônico</button>
+        <button onclick="ativarLeitorVoz()">Leitor de Voz</button>
+    </div>
 </header>
 
-<!-- Banner Pets-->
-    <section class='banner'>
-        <div class="titulo">
-            <h1> PETS</h1>
-        </div>
-    </section> <!-- banner-->
-
-   
-   
-    <!-- Banner Koda -->
-    <div class="d-flex cardpet">
-      
-        
-        <!--Div Descrição-->
-        <div class="col-6 card-body m-2 " id="">
-          <h1 id="textog" class="display-6 card-title d-flex justify-content-center">Koda - Pet Vanessa</h1>
-          
-          <div class="row align-items-center justify-content-center text-center m-3">
-
-            <!--Div Imagem logo-->
-            <div class="col-3 align-items-start">
-              <img src="/img/Koda 1.png" alt="logo" class="img-fluid" id="imgmeiosup" />
-              <p id="textop">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, voluptas? Alias, cumque repudiandae ipsum beatae mollitia ratione molestiae dolores vitae odio architecto. Maxime distinctio aspernatur aliquam illum dignissimos? Distinctio, nihil.</p>
-            </div>
-            <div class="col-3 align-items-start">
-              <img src="/img/Koda 2.png" alt="logo" class="img-fluid" id="imgmeiosup" />
-              <p id="textop">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, voluptas? Alias, cumque repudiandae ipsum beatae mollitia ratione molestiae dolores vitae odio architecto. Maxime distinctio aspernatur aliquam illum dignissimos? Distinctio, nihil.</p>
-            </div>
-            <div class="col-3 align-items-start">
-              <img src="/img/Koda 3.png" alt="logo" class="img-fluid" id="imgmeiosup" />
-              <p id="textop">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, voluptas? Alias, cumque repudiandae ipsum beatae mollitia ratione molestiae dolores vitae odio architecto. Maxime distinctio aspernatur aliquam illum dignissimos? Distinctio, nihil.</p>
-            </div>
-          
-        </div>
-      </div>
+<!-- Banner Pets -->
+<section class='banner'>
+    <div class="titulo">
+        <h1>PETS</h1>
     </div>
+</section> 
 
-     <!--Banner Belinha-->
-
+<!-- Banner Koda -->
 <div class="d-flex cardpet">
-  <div class="row align-items-center justify-content-center text-center m-1">
-    <h1 id="textog">Belinha - Pet Pedro</h1>
-
-    <!--Div Imagem logo-->
-    <div class="col-3 align-items-start">
-      <img src="/img/Belinha P.png" alt="logo" class="img-fluid" id="imgmeiosup" />
+    <div class="col-6 card-body m-2">
+        <h1 id="textog" class="display-6 card-title d-flex justify-content-center">Koda - Pet Vanessa</h1>
+        <div class="row align-items-center justify-content-center text-center m-3">
+            <div class="col-3">
+                <img src="/img/Koda 1.png" alt="Koda" class="img-fluid" />
+                <p>Koda é um Cocker Spaniel Inglês de 2 meses de idade. Pesando quase 3,5 Kg esbanja energia e ódio dos meros mortais.</p>
+            </div>
+            <div class="col-3">
+                <img src="/img/Koda 2.png" alt="Koda" class="img-fluid" />
+                <p>Atividades favoritas: morder os humanos da casa e transformar os móveis em arranhadores pessoais.</p>
+            </div>
+            <div class="col-3">
+                <img src="/img/Koda 3.png" alt="Koda" class="img-fluid" />
+                <p>Durante a madrugada, ele dorme gloriosas três horas, sendo acusado e considerado culpado por acordar todos ao seu redor.</p>
+            </div>
+        </div>
     </div>
-
-    <!--Div Descrição-->
-    <div class="col-6 card-body align-items-center" >
-      
-      <p id="textop" class="lead card-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis placeat modi rerum a assumenda aliquid repellat, eligendi hic fuga minus aperiam esse dolorum tenetur corrupti dolorem voluptate asperiores. Temporibus, ex!
-      </p>
-    </div>
-    <div class="col-3 align-items-start">
-      <img src="/img/Belinha G.png" alt="logo" class="img-fluid" id="imgmeiosup" />
-    </div>
-  </div>
 </div>
 
+<!-- Banner Belinha -->
+<div class="d-flex cardpet">
+    <div class="row align-items-center justify-content-center text-center m-1">
+        <h1 id="textog">Belinha - Pet Pedro</h1>
+        <div class="col-3">
+            <img src="/img/Belinha P.png" alt="Belinha" class="img-fluid" />
+        </div>
+        <div class="col-6">
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="col-3">
+            <img src="/img/Belinha G.png" alt="Belinha" class="img-fluid" />
+        </div>
+    </div>
+</div>
 
-  <!--Banner Pets Mayara-->
+<!-- Pets Mayara -->
+<div class="cards-mayara">
+    <h1 id="textog" class="d-flex justify-content-center">Pets Mayara</h1>
+    <div class="container">
+        <div class="imgConteudo">
+            <img src="/img/Mídia.jpg" alt="Nega">
+        </div>
+        <div class="conteudoCarita">
+            <h2>Nega</h2>
+            <p>A pet mais velha do lar, tem 14 aninhos. Gatinha estressada e antissocial.</p>
+        </div>
+    </div>
     
-    <div class="cards-mayara">
-      <h1 class="d-flex justify-content-center" id="textog">Pets Mayara</h1>
-        <div class="container">
-            <div class="imgConteudo">
-                <img src="/img/Mídia.jpg" alt="Imagem representando a fome no Brasil">
-            </div>
-            <div class="conteudoCarita">
-                <h2 id="textom">Nega</h2>
-                <p id="textop">A pet mais velha do lar, tem 14 aninhos. Gatinha estressada e antissocial, não gosta de interagir com os outros integrantes da casa, porém vem mudando esse comportamento e está tentando ser uma gatinha sociavel (Nem sempre dá certo). Ela sabe que é a dona do lar, se brincar expulsa até os donos de lá. </p>
-            </div>
+    <div class="container">
+        <div class="imgConteudo">
+            <img src="/img/Mídia (1).jpg" alt="Marvin">
         </div>
-        
-        <div class="container">
-            <div class="imgConteudo">
-                <img src="/img/Mídia (1).jpg" alt="Imagem de alimentos não perecíveis">
-            </div>
-            <div class="conteudoCarita">
-                <h2 id="textom">Marvin</h2>
-                <p id="textop">Cachorrinho fiadaputa, a carinha de bonzinho engana, vive aprontando e atormentando os amiguinhos, mas é o mais carismático do lar, e ganha todos com sua carinha.</p>
-                
-            </div>
+        <div class="conteudoCarita">
+            <h2>Marvin</h2>
+            <p>Cachorrinho travesso, sempre aprontando, mas muito carismático.</p>
         </div>
-
-        <div class="container">
-            <div class="imgConteudo">
-                <img src="/img/Mídia (2).jpg" alt="Imagem de doação de alimentos">
-            </div>
-            <div class="conteudoCarita">
-                <h2 id="textom">Ravena</h2>
-                <p id="textop">A mais nova a chegar no lar, é super fofinha e carente, mas como nem tudo é perfeito, tem o péssimo hábito de fazer suas necessidades em locais inadequados.</p>
-                
-            </div>
-        </div>
-
-        <div class="container">
-          <div class="imgConteudo">
-              <img src="/img/Mídia (3).jpg" alt="Imagem de doação de alimentos">
-          </div>
-          <div class="conteudoCarita">
-              <h2 id="textom">Luna</h2>
-              <p id="textop">A mais fofinha e quietinha do lar,adora receber carinho. Chegou ao lar junto com o Marvin.</p>
-              
-          </div>
-      </div>
     </div>
 
+    <div class="container">
+        <div class="imgConteudo">
+            <img src="/img/Mídia (2).jpg" alt="Ravena">
+        </div>
+        <div class="conteudoCarita">
+            <h2>Ravena</h2>
+            <p>A mais nova, muito carente, mas tem hábitos ruins.</p>
+        </div>
+    </div>
 
-    <footer class="d-flex align-items-center justify-content-center">
-        <img class="imgFooter" src="/img/smiling_7298827.png" alt="Logo Caritá">
-        
-    </footer>
+    <div class="container">
+        <div class="imgConteudo">
+            <img src="/img/Mídia (3).jpg" alt="Luna">
+        </div>
+        <div class="conteudoCarita">
+            <h2>Luna</h2>
+            <p>Fofinha e tranquila, adora receber carinho.</p>
+        </div>
+    </div>
+</div>
 
+<!-- Footer -->
+<footer class="d-flex align-items-center justify-content-center p-3">
+    <img class="imgFooter" src="/img/smiling_7298827.png" alt="Logo">
+</footer>
 
-
-
-  
-
-</body>
-
+<!-- Scripts -->
 <script>
   function ativarModoDaltonico() {
       document.body.classList.toggle("daltonico");
   }
+
+  let synth = window.speechSynthesis;
+  let isReading = false;
+  let utterance = new SpeechSynthesisUtterance();
+
+  function ativarLeitorVoz() {
+      if (isReading) {
+          synth.cancel();
+          isReading = false;
+          return;
+      }
+
+      let texto = document.body.innerText;
+      utterance.text = texto;
+      utterance.lang = 'pt-BR';
+      utterance.rate = 1;
+      
+      synth.speak(utterance);
+      isReading = true;
+
+      utterance.onend = function() {
+          isReading = false;
+      };
+  }
 </script>
+
+</body>
 </html>
